@@ -6,4 +6,12 @@
     <string name="affamatoBtn">Button Affamato</string>
     <string name="cerca">Cerca Offerte</string>
     <string name="affamato">Mi sento affamato</string>
+    <string name="frutta">Frutta</string>
+    <string name="hamburger">Hamburger</string>
+    <string name="kebab">Kebab</string>
+    <string name="patatine">Patatine</string>
+    <string name="panini">Panini</string>
+    <string name="sushi">Sushi</string>
+    <string name="pesce">Pesce</string>
+    <string name="pizza">Pizza</string>
 </resources>
