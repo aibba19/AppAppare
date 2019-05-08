@@ -1,11 +1,3 @@
 <resources>
     <string name="app_name">AppAppare</string>
-    <string name="pizza">Pizza</string>
-    <string name="hamburger">Hamburger</string>
-    <string name="frutta">Frutta</string>
-    <string name="pesce">Pesce</string>
-    <string name="kebab">Kebab</string>
-    <string name="sushi">Sushi</string>
-    <string name="panini">Panini</string>
-    <string name="patatine">Patatine</string>
 </resources>
