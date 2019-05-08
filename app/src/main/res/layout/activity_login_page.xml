@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/hamburger_1080x1920"
-    tools:context=".HomepageActivity">
+    tools:context=".LoginPage">
 
     <ImageView
         android:id="@+id/imageView"
@@ -28,7 +28,7 @@
         android:src="@drawable/logo" />
 
     <Button
-        android:id="@+id/cercaOfferteBtn"
+        android:id="@+id/LoginBtn"
         android:layout_width="wrap_content"
         android:layout_height="63dp"
         android:layout_alignParentStart="true"
@@ -43,11 +43,11 @@
         android:layout_marginEnd="80dp"
         android:layout_marginRight="80dp"
         android:layout_marginBottom="268dp"
-        android:contentDescription="@string/cercaBtn"
-        android:text="@string/cerca" />
+        android:contentDescription="@string/login"
+        android:text="@string/login" />
 
     <Button
-        android:id="@+id/AffamatoBtn"
+        android:id="@+id/RegistratiBtn"
         android:layout_width="wrap_content"
         android:layout_height="63dp"
         android:layout_alignParentStart="true"
@@ -62,6 +62,7 @@
         android:layout_marginEnd="80dp"
         android:layout_marginRight="80dp"
         android:layout_marginBottom="138dp"
-        android:contentDescription="@string/affamatoBtn"
-        android:text="@string/affamato" />
+        android:contentDescription="@string/registrati"
+        android:text="@string/registrati" />
+
 </RelativeLayout>
