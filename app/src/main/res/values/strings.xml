@@ -1,4 +1,9 @@
 <resources>
     <string name="app_name">AppAppare</string>
-
+    <string name="title_activity_home">home</string>
+    <string name="logo">logo</string>
+    <string name="cercaBtn">Button Cerca</string>
+    <string name="affamatoBtn">Button Affamato</string>
+    <string name="cerca">Cerca Offerte</string>
+    <string name="affamato">Mi sento affamato</string>
 </resources>
