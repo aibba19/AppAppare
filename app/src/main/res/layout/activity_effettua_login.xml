@@ -6,8 +6,4 @@
     android:layout_width="match_parent"
     android:background="@drawable/hamburger_1080x1920"
     android:layout_height="match_parent"
-    tools:context=".effettuaLogin">
-
-
-
-</RelativeLayout>
+    tools:context=".effettuaLogin"/>
