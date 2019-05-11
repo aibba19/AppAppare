@@ -16,4 +16,5 @@
     <string name="pizza">Pizza</string>
     <string name="login">Login</string>
     <string name="registrati">Registrati</string>
+    <string name="effettuareg">EffettuaRegistrazione</string>
 </resources>

@@ -4,26 +4,26 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:background="@drawable/hamburger_1080x1920"
     android:layout_height="match_parent"
-    tools:context=".effettuaLogin">
-
+    tools:context=".Registrazione"
+    android:background="@drawable/hamburger_1080x1920">
 
     <LinearLayout
-
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
 
         <ImageView
+
             android:layout_width="wrap_content"
             android:layout_height="150dp"
             android:src="@drawable/logo"
             android:layout_marginTop="70dp"
             android:contentDescription="@string/logo"
             />
+
         <EditText
-            android:id="@+id/Username"
+            android:id="@+id/nuovoUsername"
             android:layout_marginTop="10dp"
             android:layout_width="300dp"
             android:layout_height="60dp"
@@ -31,32 +31,24 @@
             android:hint="Username"/>
 
         <EditText
-            android:id="@+id/Password"
+            android:id="@+id/mail"
+            android:layout_marginTop="10dp"
             android:layout_width="300dp"
             android:layout_height="60dp"
             android:layout_gravity="center"
-            android:hint="Password"
+            android:hint="Email"/>
+
+        <EditText
+            android:id="@+id/nuovaPassword"
+            android:layout_marginTop="10dp"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
             android:inputType="textPassword"
-            />
+            android:hint="Password"/>
 
         <Button
-            android:id="@+id/loginButton"
-            android:layout_marginTop="20dp"
-            android:layout_marginRight="60dp"
-            android:layout_marginLeft="60dp"
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:text="@string/login" />
-        <TextView
-            android:layout_marginTop="20dp"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:text="-oppure-"
-            android:textSize="16dp"/>
-
-        <Button
-            android:id="@+id/registratiButton"
+            android:id="@+id/effettuaRegistrazione"
             android:layout_marginTop="20dp"
             android:layout_marginRight="60dp"
             android:layout_marginLeft="60dp"
@@ -66,4 +58,6 @@
 
 
     </LinearLayout>
+
+
 </RelativeLayout>
