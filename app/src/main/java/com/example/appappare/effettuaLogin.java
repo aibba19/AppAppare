@@ -51,7 +51,7 @@ public class effettuaLogin extends AppCompatActivity {
             if((user.equals("")) && (pass.equals(""))) {
                 AlertDialog.Builder vuoto = new AlertDialog.Builder(this);
                 vuoto.setTitle("Campi vuoti");
-                vuoto.setMessage("Riempi i campi di Login e Password!");
+                vuoto.setMessage("Riempi i campi di Username e Password!");
                 AlertDialog alert = vuoto.create();
                 alert.show();
             }else {
