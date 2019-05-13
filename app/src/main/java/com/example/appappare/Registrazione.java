@@ -1,5 +1,6 @@
 package com.example.appappare;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Patterns;
@@ -8,6 +9,8 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import java.util.ArrayList;
+
 public class Registrazione extends AppCompatActivity {
 
     private EditText nuovoUsername;
@@ -15,6 +18,7 @@ public class Registrazione extends AppCompatActivity {
     private EditText nuovaPassword;
     private Button effettuaRegistrazione;
     private String nome, email, password;
+    static ArrayList<User> usersList;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,13 +29,13 @@ public class Registrazione extends AppCompatActivity {
         nuovaMail= (EditText) findViewById(R.id.nuovaMail);
         nuovaPassword = (EditText) findViewById(R.id.nuovaPassword);
         effettuaRegistrazione = (Button) findViewById(R.id.effettuaRegistrazione);
-
         effettuaRegistrazione.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 register();
             }
         });
+
 
     }
 
@@ -46,6 +50,13 @@ public class Registrazione extends AppCompatActivity {
 
     public void onSignupSuccess() {
         //TODO dopo input validazione
+        usersList.add(new User(nome, email, password));
+        log();
+    }
+
+    public void log() {
+        Intent intent1 = new Intent(this, effettuaLogin.class);
+        startActivity(intent1);
     }
 
     public boolean validate() {

@@ -42,9 +42,9 @@ public class effettuaLogin extends AppCompatActivity {
 
 
     }
-
-    public void validate(String user, String pass) {
-        if((user.equals("Utente")) && (pass.equals("password"))) {
+    /*TODO va cambiato perchè deve prendere
+    * gli user dalla lista*/
+    /*if((user.equals("Utente")) && (pass.equals("password"))) {
             Intent intent1 = new Intent(this, HomepageActivity.class);
             startActivity(intent1);
         }else{
@@ -60,6 +60,28 @@ public class effettuaLogin extends AppCompatActivity {
                 errati.setMessage("Reinserisci le tue credenziali!");
                 AlertDialog alert1 = errati.create();
                 alert1.show();
+            }
+        }*/
+    public void validate(String user, String pass) {
+        for (int i = 0; i <= Registrazione.usersList.size(); i++) {
+            if((user.equals(Registrazione.usersList.get(i).getNomeU())) &&
+                    pass.equals(Registrazione.usersList.get(i).getPasswordU())){
+                Intent intent1 = new Intent(this, HomepageActivity.class);
+                startActivity(intent1);
+            } else {
+                if((user.equals("")) && (pass.equals(""))) {
+                    AlertDialog.Builder vuoto = new AlertDialog.Builder(this);
+                    vuoto.setTitle("Campi vuoti");
+                    vuoto.setMessage("Riempi i campi di Username e Password!");
+                    AlertDialog alert = vuoto.create();
+                    alert.show();
+                }else {
+                    AlertDialog.Builder errati = new AlertDialog.Builder(this);
+                    errati.setTitle("Credenziali errate");
+                    errati.setMessage("Reinserisci le tue credenziali o registrati!");
+                    AlertDialog alert1 = errati.create();
+                    alert1.show();
+                }
             }
         }
     }
