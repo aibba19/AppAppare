@@ -69,3 +69,4 @@ public class effettuaLogin extends AppCompatActivity {
         startActivity(intent);
     }
 }
+ 

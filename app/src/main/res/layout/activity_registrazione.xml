@@ -31,7 +31,7 @@
             android:hint="Username"/>
 
         <EditText
-            android:id="@+id/mail"
+            android:id="@+id/nuovaMail"
             android:layout_marginTop="10dp"
             android:layout_width="300dp"
             android:layout_height="60dp"
