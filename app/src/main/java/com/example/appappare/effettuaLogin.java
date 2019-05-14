@@ -42,8 +42,7 @@ public class effettuaLogin extends AppCompatActivity {
 
 
     }
-    /*TODO va cambiato perchè deve prendere
-    * gli user dalla lista*/
+    //TODO va cambiato perchè deve prendere gli utenti dalla lista
     /*if((user.equals("Utente")) && (pass.equals("password"))) {
             Intent intent1 = new Intent(this, HomepageActivity.class);
             startActivity(intent1);
@@ -63,7 +62,7 @@ public class effettuaLogin extends AppCompatActivity {
             }
         }*/
     public void validate(String user, String pass) {
-        for (int i = 0; i <= Registrazione.usersList.size(); i++) {
+        for (int i = 0; i < Registrazione.usersList.size(); i++) {
             if((user.equals(Registrazione.usersList.get(i).getNomeU())) &&
                     pass.equals(Registrazione.usersList.get(i).getPasswordU())){
                 Intent intent1 = new Intent(this, HomepageActivity.class);

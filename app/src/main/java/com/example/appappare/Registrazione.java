@@ -1,9 +1,12 @@
 package com.example.appappare;
 
+import android.app.AlertDialog;
+import android.content.Context;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Patterns;
+import android.view.Gravity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -44,14 +47,26 @@ public class Registrazione extends AppCompatActivity {
         if (!validate()) {
             Toast.makeText(this, "Registrazione fallita",Toast.LENGTH_SHORT ).show();
         }else{
+            regEffettuata();
             onSignupSuccess();
         }
     }
 
     public void onSignupSuccess() {
         //TODO dopo input validazione
+        usersList = new ArrayList<>();
         usersList.add(new User(nome, email, password));
         log();
+    }
+
+
+    public void regEffettuata() {
+        Context context = getApplicationContext();
+        CharSequence text = "Registrazione effettuata! Ora puoi effettuare il login!";
+        int duration = Toast.LENGTH_SHORT;
+        Toast toast = Toast.makeText(context, text, duration);
+        toast.setGravity(Gravity.CENTER_VERTICAL, 0, 0);
+        toast.show();
     }
 
     public void log() {
@@ -62,7 +77,7 @@ public class Registrazione extends AppCompatActivity {
     public boolean validate() {
         boolean valid = true ;
         if(nome.isEmpty() || nome.length()>32) {
-            nuovoUsername.setError("Imserisci un nome valido");
+            nuovoUsername.setError("Inserisci un nome valido");
             valid =  false;
         }
         if(email.isEmpty() || !Patterns.EMAIL_ADDRESS.matcher(email).matches()) {
