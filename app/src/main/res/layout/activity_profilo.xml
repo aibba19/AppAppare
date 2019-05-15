@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/hamburger_1080x1920"
-    tools:context=".HomepageActivity">
+    tools:context=".Profilo">
 
 
 
@@ -15,37 +16,31 @@
         android:orientation="vertical">
 
         <ImageButton
-            android:id="@+id/profileBtn"
+            android:id="@+id/homeBtn"
             android:layout_width="48dp"
             android:layout_height="48dp"
             android:layout_marginLeft="340dp"
             android:layout_marginTop="20dp"
             android:layout_marginRight="20dp"
-            android:background="@drawable/round_face_white_48dp" />
+            android:background="@drawable/homebutton" />
 
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="150dp"
             android:layout_marginTop="70dp"
             android:contentDescription="@string/logo"
-            android:src="@drawable/logo" />
+            android:src="@drawable/propic" />
 
         <Button
-            android:id="@+id/cercaButton"
+            android:id="@+id/listaSalvati"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:layout_marginLeft="60dp"
             android:layout_marginTop="70dp"
             android:layout_marginRight="60dp"
-            android:text="@string/cerca" />
+            android:text="@string/offerteSalv" />
 
-        <Button
-            android:id="@+id/affamatoButton"
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:layout_marginLeft="60dp"
-            android:layout_marginTop="50dp"
-            android:layout_marginRight="60dp"
-            android:text="@string/affamato" />
     </LinearLayout>
+
+
 </RelativeLayout>
