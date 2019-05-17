@@ -8,8 +8,6 @@
     android:background="@drawable/hamburger_1080x1920"
     tools:context=".Profilo">
 
-
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -41,6 +39,5 @@
             android:text="@string/offerteSalv" />
 
     </LinearLayout>
-
 
 </RelativeLayout>
