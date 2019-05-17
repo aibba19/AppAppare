@@ -10,6 +10,7 @@ import android.view.Gravity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.Toast;
 
 import java.util.ArrayList;
@@ -21,6 +22,7 @@ public class Registrazione extends AppCompatActivity {
     private EditText nuovaPassword;
     private Button effettuaRegistrazione;
     private String nome, email, password;
+    private ImageButton indietro;
     static ArrayList<User> usersList;
 
     @Override
@@ -38,7 +40,13 @@ public class Registrazione extends AppCompatActivity {
                 register();
             }
         });
-
+        indietro = (ImageButton) findViewById(R.id.backBtn);
+        indietro.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                goBack();
+            }
+        });
 
     }
 
@@ -72,6 +80,13 @@ public class Registrazione extends AppCompatActivity {
     public void log() {
         Intent intent1 = new Intent(this, effettuaLogin.class);
         startActivity(intent1);
+        overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_right);
+    }
+
+    public void goBack() {
+        Intent indietro = new Intent(this, effettuaLogin.class);
+        startActivity(indietro);
+        overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_right);
     }
 
     public boolean validate() {

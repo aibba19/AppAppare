@@ -1,6 +1,7 @@
 package com.example.appappare;
 
 import android.content.Intent;
+import android.media.Image;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -9,12 +10,22 @@ import android.widget.ImageButton;
 public class ListaOfferteSalvate extends AppCompatActivity {
     private ImageButton home;
     private ImageButton profilo;
+    private ImageButton indietro;
+
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_lista_offerte_salvate);
+
+        indietro = (ImageButton) findViewById(R.id.backBtn);
+        indietro.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                goBack();
+            }
+        });
 
         home = (ImageButton) findViewById(R.id.homeBtn);
         home.setOnClickListener(new View.OnClickListener() {
@@ -43,7 +54,11 @@ public class ListaOfferteSalvate extends AppCompatActivity {
         Intent profilo = new Intent(this, Profilo.class);
         startActivity(profilo);
         overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_right);
-
     }
 
+    public void goBack() {
+        Intent indietro = new Intent(this, Profilo.class);
+        startActivity(indietro);
+        overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_right);
+    }
 }
