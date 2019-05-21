@@ -4,9 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ListaOfferteSalvate"
+    tools:context=".offertaSalvata"
     android:background="@drawable/hamburger_1080x1920">
-
 
     <ImageButton
         android:id="@+id/backBtn"
@@ -16,15 +15,6 @@
         android:layout_marginTop="20dp"
         android:layout_marginRight="20dp"
         android:background="@drawable/back" />
-
-    <ListView
-        android:id="@+id/listaOfferteSalvate"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="100dp"
-        android:layout_marginLeft="20dp"
-
-        ></ListView>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -50,14 +40,36 @@
             android:background="@drawable/homebutton" />
 
     </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
+    
+    <TextView
+        android:id="@+id/nomeOfferta"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
-    </LinearLayout>
+        android:layout_marginTop="150dp"
+        android:layout_marginLeft="20dp"
+        android:text="Nome Offerta"
+        android:textSize="50dp"
+        />
 
 
+    <TextView
+        android:id="@+id/contenutoOfferta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="220dp"
+        android:text="Contenuto Offerta"
+        android:textSize="30dp"
+        />
+
+    <ImageView
+        android:id="@+id/fotoOfferta"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="270dp"/>
 
 
 </RelativeLayout>
