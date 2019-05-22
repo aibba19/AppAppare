@@ -26,7 +26,7 @@
             android:name=".home"
             android:label="@string/title_activity_home"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".MainActivity" />
+        <activity android:name=".SelectFoodActivity" />
     </application>
 
 </manifest>
