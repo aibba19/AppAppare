@@ -152,7 +152,7 @@ public class ListaOfferteSalvate extends AppCompatActivity {
             images.setImageResource(fotos[position]);
             myTitle.setText(titoli[position]);
             myDescription.setText(descrizioni[position]);
-
+2
             return riga;
         }
     }*/
