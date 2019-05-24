@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:layout_gravity="center"
     android:orientation="vertical"
-    tools:context=".MainActivity"
+    tools:context=".SelectFoodActivity"
     android:background="@drawable/hamburger_1080x1920">
 
         <TextView
@@ -16,8 +16,8 @@
             android:layout_gravity="center_horizontal"
             android:text="Scegliere le tipologie di cibo"
             android:textAppearance="?android:textAppearanceLarge"
-            android:textSize="25dp"
-            android:textColor="@color/colorAccent"/>
+            android:textSize="25sp"
+            android:textColor="#f09353"/>
 
         <CheckBox
             android:id="@+id/pesce"
@@ -25,9 +25,8 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_margin="10dp"
-            android:onClick="selectItem"
             android:text="@string/pesce"
-            android:textSize="20dp" />
+            android:textSize="20sp" />
 
         <CheckBox
             android:id="@+id/pizza"
@@ -35,9 +34,8 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_margin="10dp"
-            android:onClick="selectItem"
             android:text="@string/pizza"
-            android:textSize="20dp" />
+            android:textSize="20sp" />
 
         <CheckBox
             android:id="@+id/frutta"
@@ -45,9 +43,8 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_margin="15dp"
-            android:onClick="selectItem"
             android:text="@string/frutta"
-            android:textSize="20dp" />
+            android:textSize="20sp" />
 
         <CheckBox
             android:id="@+id/hamburger"
@@ -55,9 +52,8 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_margin="10dp"
-            android:onClick="selectItem"
             android:text="@string/hamburger"
-            android:textSize="20dp"/>
+            android:textSize="20sp" />
 
         <CheckBox
             android:id="@+id/kebab"
@@ -65,9 +61,8 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_margin="10dp"
-            android:onClick="selectItem"
             android:text="@string/kebab"
-            android:textSize="20dp" />
+            android:textSize="20sp" />
 
         <CheckBox
             android:id="@+id/patatine"
@@ -75,9 +70,8 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_margin="10dp"
-            android:onClick="selectItem"
             android:text="@string/patatine"
-            android:textSize="20dp" />
+            android:textSize="20sp" />
 
         <CheckBox
             android:id="@+id/panini"
@@ -85,9 +79,8 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_margin="10dp"
-            android:onClick="selectItem"
             android:text="@string/panini"
-            android:textSize="20dp" />
+            android:textSize="20sp" />
 
         <CheckBox
             android:id="@+id/sushi"
@@ -95,19 +88,19 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_margin="10dp"
-            android:onClick="selectItem"
             android:text="@string/sushi"
-            android:textSize="20dp" />
+            android:textSize="20sp" />
 
         <Button
+            android:id="@+id/selezionaTutto"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_margin="10dp"
-            android:text="Seleziona tutto"
-            />
+            android:text="Seleziona tutto" />
 
         <Button
+            android:id="@+id/avanti"
             android:layout_width="100dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
