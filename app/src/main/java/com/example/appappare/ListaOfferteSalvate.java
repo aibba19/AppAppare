@@ -23,8 +23,9 @@ public class ListaOfferteSalvate extends AppCompatActivity {
     private ImageButton indietro;
 
     ListView lista;
-    String titoli[] = {"Menu Hamburger -> 5€", "Mega margherita  -> 3.5 €", "Grill 'em all -> 13€"};
-    String descrizioni[] = {"Hamburger + patatine + bibita 33cl", "pizza margherita + bibita", "Bistecca di manzo + contorno + bibita"};
+    String titoli[] = {"Menu Hamburger", "Mega margherita", "Grill 'em all"};
+    String descrizioni[] = {"Hamburger, patatine, bibita 33cl", "Pizza margherita, bibita", "Bistecca di manzo, contorno, bibita"};
+    String prezzi[] = {"5€", "3.5€", "13€"};
     int foto[] = {R.drawable.hamburgerofferta, R.drawable.margherita, R.drawable.bisteccaofferte};
 
 
@@ -57,7 +58,7 @@ public class ListaOfferteSalvate extends AppCompatActivity {
             }
         });
 
-        lista = findViewById(R.id.listaOfferteSalvate);
+        lista = (ListView) findViewById(R.id.listaOfferteSalvate);
 
         CustomAdapter customAdapter = new CustomAdapter();
         lista.setAdapter(customAdapter);
@@ -69,6 +70,7 @@ public class ListaOfferteSalvate extends AppCompatActivity {
                 intent.putExtra("nome", titoli[position]);
                 intent.putExtra("descrizione", descrizioni[position]);
                 intent.putExtra("foto", foto[position]);
+                intent.putExtra("prezzo", prezzi[position]);
                 startActivity(intent);
 
             }
@@ -114,11 +116,13 @@ public class ListaOfferteSalvate extends AppCompatActivity {
             View view1 = getLayoutInflater().inflate(R.layout.riga_lista_salvati, null);
 
             TextView name = view1.findViewById(R.id.TitoloOfferta);
-            TextView descr = view1.findViewById(R.id.descrizioneOfferta);
+            TextView description = view1.findViewById(R.id.descrizioneOfferta);
+            TextView cost = view1.findViewById(R.id.prezzoOfferta);
             ImageView photo = view1.findViewById(R.id.fotofood);
 
             name.setText(titoli[position]);
-            descr.setText(descrizioni[position]);
+            description.setText(descrizioni[position]);
+            cost.setText(prezzi[position]);
             photo.setImageResource(foto[position]);
 
             return view1;

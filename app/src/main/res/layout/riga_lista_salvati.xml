@@ -15,7 +15,8 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:layout_margin="10dp">
 
         <TextView
             android:id="@+id/TitoloOfferta"
@@ -30,6 +31,12 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="descrizione"/>
+
+        <TextView
+            android:id="@+id/prezzoOfferta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="prezzo"/>
 
 
     </LinearLayout>

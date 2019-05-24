@@ -18,7 +18,7 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:orientation="horizontal">
 
         <ImageButton
@@ -40,36 +40,58 @@
             android:background="@drawable/homebutton" />
 
     </LinearLayout>
-    
-    <TextView
-        android:id="@+id/nomeOfferta"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+
+    <LinearLayout
+        android:layout_width="400dp"
+        android:layout_height="400dp"
+        android:layout_marginLeft="10dp"
         android:layout_marginTop="150dp"
-        android:layout_marginLeft="20dp"
-        android:text="Nome Offerta"
-        android:textSize="50dp"
-        />
+        android:layout_marginRight="10dp"
+        android:orientation="vertical"
+        android:padding="20dp">
 
 
-    <TextView
-        android:id="@+id/contenutoOfferta"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="220dp"
-        android:text="Contenuto Offerta"
-        android:textSize="30dp"
-        />
+        <TextView
+            android:id="@+id/nomeOfferta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="Nome Offerta"
+            android:textColor="#000"
+            android:textSize="30dp" />
 
-    <ImageView
-        android:id="@+id/fotoOfferta"
-        android:layout_width="match_parent"
-        android:layout_height="200dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="270dp"/>
+        <TextView
+            android:id="@+id/contenutoOfferta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:text="Contenuto Offerta"
+            android:textColor="#000"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/costoOfferta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:text="prezzo"
+            android:textColor="#000"
+            android:textSize="20dp" />
+
+        <ImageView
+            android:id="@+id/fotoOfferta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/backgroundofferta" />
+
+    </LinearLayout>
+
 
 
 </RelativeLayout>
