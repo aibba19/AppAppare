@@ -17,7 +17,7 @@ public class Ingredienti extends AppCompatActivity implements View.OnClickListen
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_ingredienti);
         salame=findViewById(R.id.salame);
         wurstel=findViewById(R.id.wurstel);
         cotto=findViewById(R.id.cotto);

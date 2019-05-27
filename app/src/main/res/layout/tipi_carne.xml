@@ -5,136 +5,145 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/pizza"
-    tools:context=".Ingredienti">
+    android:background="@drawable/prova1"
+    tools:context=".TipiCarne">
 
-    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        android:layout_width="match_parent"
+    <LinearLayout
+        android:layout_width="379dp"
         android:layout_height="match_parent"
         android:orientation="vertical">
 
+
         <TextView
-            android:layout_marginTop="5dp"
+            android:layout_marginTop="30dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="150dp"
             android:fontFamily="cursive"
-            android:layout_gravity="center"
-            android:typeface="serif"
-            android:text="INGREDIENTI"
+            android:text="CARNI"
             android:textColor="@color/colorAccent"
-            android:textSize="40dp" />
+            android:textSize="40dp"
+            android:typeface="serif" />
 
         <CheckBox
-            android:id="@+id/salame"
-            android:layout_marginTop="5dp"
-            android:typeface="monospace"
+            android:id="@+id/bisteccaManzo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="10dp"
             android:layout_marginRight="0dp"
-            android:layout_marginLeft="100dp"
-            android:text="Salame"
+            android:text="Bistecca di Manzo"
             android:fontFamily="cursive"
             android:textSize="40dp"
+            android:typeface="monospace"
             tools:layout_editor_absoluteX="0dp"
             tools:layout_editor_absoluteY="60dp" />
 
         <CheckBox
-            android:id="@+id/wurstel"
+            android:id="@+id/bisteccaCavallo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="5dp"
             android:layout_marginRight="0dp"
-            android:layout_marginLeft="100dp"
             android:fontFamily="cursive"
-            android:text="Wurstel"
+            android:text="Bistecca di Cavallo"
             android:textSize="40dp"
             android:typeface="monospace"
             tools:layout_editor_absoluteX="0dp"
-            tools:layout_editor_absoluteY="80dp" />
+            tools:layout_editor_absoluteY="180dp" />
 
         <CheckBox
-            android:id="@+id/cotto"
+            android:id="@+id/bisteccaMaiale"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="5dp"
             android:layout_marginRight="0dp"
-            android:layout_marginLeft="100dp"
             android:fontFamily="cursive"
-            android:text="Prosciutto cotto"
+            android:text="Bistecca di Maiale"
             android:textSize="40dp"
             android:typeface="monospace"
             tools:layout_editor_absoluteX="0dp"
             tools:layout_editor_absoluteY="220dp" />
 
         <CheckBox
-            android:id="@+id/patate"
-            android:layout_width="270dp"
+            android:id="@+id/spezzatinoAsino"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:typeface="monospace"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="5dp"
             android:layout_marginRight="0dp"
-            android:layout_marginLeft="100dp"
-            android:text="Patate fritte"
             android:fontFamily="cursive"
+            android:text="Spezzatino di Asino"
             android:textSize="40dp"
+            android:typeface="monospace"
             tools:layout_editor_absoluteX="0dp"
             tools:layout_editor_absoluteY="300dp" />
 
         <CheckBox
-            android:id="@+id/funghi"
-            android:layout_width="178dp"
+            android:id="@+id/costineMaiale"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="5dp"
             android:layout_marginRight="0dp"
-            android:layout_marginLeft="100dp"
-            android:text="Funghi"
             android:fontFamily="cursive"
-            android:textSize="40dp"
-            android:typeface="monospace"
-            tools:layout_editor_absoluteX="0dp"
-            tools:layout_editor_absoluteY="380dp" />
-
-        <CheckBox
-            android:id="@+id/pomodorini"
-            android:layout_width="270dp"
-            android:layout_height="wrap_content"
-            android:layout_marginRight="0dp"
-            android:layout_marginLeft="100dp"
-            android:typeface="monospace"
-            android:text="Pomodorini"
-            android:fontFamily="cursive"
-            android:textSize="40dp"
-            tools:layout_editor_absoluteX="0dp"
-            tools:layout_editor_absoluteY="460dp" />
-
-        <CheckBox
-            android:id="@+id/rucola"
-            android:layout_width="222dp"
-            android:layout_height="wrap_content"
-            android:layout_marginRight="0dp"
-            android:layout_marginLeft="100dp"
-            android:text="Rucola"
-            android:fontFamily="cursive"
+            android:text="Costine di Maiale"
             android:textSize="40dp"
             android:typeface="monospace"
             tools:layout_editor_absoluteX="0dp"
             tools:layout_editor_absoluteY="540dp" />
 
         <CheckBox
-            android:id="@+id/pancetta"
-            android:layout_width="270dp"
+            android:id="@+id/grigliataMista"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="5dp"
             android:layout_marginRight="0dp"
-            android:layout_marginLeft="100dp"
-            android:typeface="monospace"
-            android:text="Pancetta"
             android:fontFamily="cursive"
+            android:text="Grigliata Mista"
             android:textSize="40dp"
+            android:typeface="monospace"
             tools:layout_editor_absoluteX="0dp"
             tools:layout_editor_absoluteY="620dp" />
 
+        <CheckBox
+            android:id="@+id/salsiccia"
+            android:layout_width="387dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="0dp"
+            android:fontFamily="cursive"
+            android:text="Salsiccia"
+            android:textSize="40dp"
+            android:typeface="monospace"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="380dp" />
+
+        <CheckBox
+            android:id="@+id/spiedini"
+            android:layout_width="270dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="0dp"
+            android:fontFamily="cursive"
+            android:text="Spiedini"
+            android:textSize="40dp"
+            android:typeface="monospace"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="460dp" />
+
         <Button
+
             android:id="@+id/button"
             android:layout_width="206dp"
             android:layout_height="50dp"
             android:layout_marginLeft="100dp"
-            android:layout_marginTop="90dp"
+            android:layout_marginTop="25dp"
             android:layout_marginRight="80dp"
             android:fontFamily="cursive"
             android:onClick="onClick"
@@ -142,7 +151,7 @@
             android:textSize="20dp"
             android:typeface="monospace"
 
-           />
+            />
 
 
     </LinearLayout>
