@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".offertaSalvata"
-    android:background="@drawable/hamburger_1080x1920">
+    android:background="@drawable/woodbackground">
 
     <ImageButton
         android:id="@+id/backBtn"

@@ -6,13 +6,16 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
+import android.widget.ImageButton;
 import android.widget.Toast;
 
 public class Ingredienti extends AppCompatActivity implements View.OnClickListener {
 
     private CheckBox salame,wurstel,cotto,patate,funghi,pomodorini,rucola,pancetta;
-    //CREO BOTTONE
     private Button button;
+    private ImageButton home;
+    private ImageButton profilo;
+    private ImageButton indietro;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -45,11 +48,35 @@ public class Ingredienti extends AppCompatActivity implements View.OnClickListen
 
             }
         });
+
+        indietro = (ImageButton) findViewById(R.id.backBtn);
+        indietro.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                goBack();
+            }
+        });
+
+        home = (ImageButton) findViewById(R.id.homeBtn);
+        home.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                goHome();
+            }
+        });
+
+        profilo = (ImageButton) findViewById(R.id.profileBtn);
+        profilo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                goProfilo();
+            }
+        });
     }
     //BOTTONE Apertura nuova pagina
     public void openActivity2(){
-        Intent intent = new Intent(this, MainActivity.class);
-        startActivity(intent);
+      /*  Intent intent = new Intent(this, MainActivity.class);
+        startActivity(intent);*/
     }
     @Override
     public void onClick(View view){
@@ -102,6 +129,24 @@ public class Ingredienti extends AppCompatActivity implements View.OnClickListen
         }
 
 
+    }
+
+    public void goHome() {
+        Intent casa = new Intent(this, HomepageActivity.class);
+        startActivity(casa);
+        overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_right);
+    }
+
+    public void goProfilo() {
+        Intent profilo = new Intent(this, Profilo.class);
+        startActivity(profilo);
+        overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_right);
+    }
+
+    public void goBack() {
+        Intent indietro = new Intent(this, SelectFoodActivity.class);
+        startActivity(indietro);
+        overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_right);
     }
 
 }
