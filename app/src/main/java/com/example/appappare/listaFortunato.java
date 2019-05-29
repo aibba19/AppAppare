@@ -24,7 +24,7 @@ public class listaFortunato extends AppCompatActivity {
     String prezzi[] = {"10€", "7€", "5€"};
     String scadenze[] = {"08/07/2019" , "05/11/2019" , "05/09/2019"};
     String locali[] = {"O' mare", "Il foro" , "Country Smokehouse"};
-    int foto[] = {R.drawable.americana, R.drawable.wurstel, R.drawable.patatine};
+    int foto[] = {R.drawable.frittura, R.drawable.caesar_salad, R.drawable.hamburgeroffertafortunata};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -55,7 +55,7 @@ public class listaFortunato extends AppCompatActivity {
             }
         });
 
-        lista = (ListView) findViewById(R.id.listaOfferteSalvate);
+        lista = (ListView) findViewById(R.id.listaAffamato);
 
         listaFortunato.CustomAdapter customAdapter = new listaFortunato.CustomAdapter();
         lista.setAdapter(customAdapter);
@@ -63,7 +63,7 @@ public class listaFortunato extends AppCompatActivity {
         lista.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                Intent intent = new Intent(getApplicationContext(),VisualizzaOfferta.class);
+                Intent intent = new Intent(getApplicationContext(),OffertaFortunato.class);
                 intent.putExtra("nome", titoli[position]);
                 intent.putExtra("locale", locali[position]);
                 intent.putExtra("descrizione", descrizioni[position]);
@@ -112,14 +112,14 @@ public class listaFortunato extends AppCompatActivity {
 
         @Override
         public View getView(int position, View convertView, ViewGroup parent) {
-            View view1 = getLayoutInflater().inflate(R.layout.riga_lista_salvati, null);
+            View affamato = getLayoutInflater().inflate(R.layout.riga_affamato, null);
 
-            TextView name = view1.findViewById(R.id.TitoloOfferta);
-            TextView place = view1.findViewById(R.id.nomeLocale);
-            TextView description = view1.findViewById(R.id.descrizioneOfferta);
-            TextView cost = view1.findViewById(R.id.prezzoOfferta);
-            TextView scad = view1.findViewById(R.id.scadenzaOfferta);
-            ImageView photo = view1.findViewById(R.id.fotofood);
+            TextView name = affamato.findViewById(R.id.titoloAffamato);
+            TextView place = affamato.findViewById(R.id.localeAffamato);
+            TextView description = affamato.findViewById(R.id.descrizioneAffamato);
+            TextView cost = affamato.findViewById(R.id.prezzoAffamato);
+            TextView scad = affamato.findViewById(R.id.scadenzaAffamato);
+            ImageView photo = affamato.findViewById(R.id.fotofoodAffamato);
 
             name.setText(titoli[position]);
             place.setText(locali[position]);
@@ -128,7 +128,7 @@ public class listaFortunato extends AppCompatActivity {
             scad.setText(scadenze[position]);
             photo.setImageResource(foto[position]);
 
-            return view1;
+            return affamato;
         }
     }
 }

@@ -29,7 +29,7 @@ public class OffertaFortunato extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_offerta_fortunato);
 
-        indietro = (ImageButton) findViewById(R.id.backBtn);
+        indietro = (ImageButton) findViewById(R.id.backBtnF);
         indietro.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -90,8 +90,8 @@ public class OffertaFortunato extends AppCompatActivity {
     }
 
     public void goBack() {
-        Intent indietro = new Intent(this, listaFortunato.class);
-        startActivity(indietro);
+        Intent indietroF = new Intent(this, listaFortunato.class);
+        startActivity(indietroF);
         overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_right);
     }
 

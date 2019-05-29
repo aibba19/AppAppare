@@ -9,7 +9,7 @@
     android:background="@drawable/woodbackground">
 
     <ImageButton
-        android:id="@+id/backBtn"
+        android:id="@+id/backBtnF"
         android:layout_width="48dp"
         android:layout_height="48dp"
         android:layout_marginLeft="20dp"
