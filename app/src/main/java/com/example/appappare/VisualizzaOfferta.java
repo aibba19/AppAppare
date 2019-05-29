@@ -1,24 +1,33 @@
 package com.example.appappare;
 
+import android.content.Context;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.Gravity;
 import android.view.View;
-import android.widget.Button;
 import android.widget.ImageButton;
+import android.widget.ImageView;
+import android.widget.TextView;
+import android.widget.Toast;
 
-public class TipiCarne extends AppCompatActivity {
+public class VisualizzaOfferta extends AppCompatActivity {
 
+    TextView nome;
+    TextView locale;
+    TextView contenuto;
+    ImageView foto;
+    TextView prezzo;
+    TextView scadenza;
     private ImageButton home;
     private ImageButton profilo;
     private ImageButton indietro;
-    private Button procedi;
-
+    private ImageButton salva;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_tipi_carne);
+        setContentView(R.layout.activity_visualizza_offerta);
 
         indietro = (ImageButton) findViewById(R.id.backBtn);
         indietro.setOnClickListener(new View.OnClickListener() {
@@ -44,13 +53,28 @@ public class TipiCarne extends AppCompatActivity {
             }
         });
 
-        procedi = (Button) findViewById(R.id.procedi);
-        procedi.setOnClickListener(new View.OnClickListener() {
+        salva = (ImageButton) findViewById(R.id.saveBtn);
+        salva.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                goProcedi();
+                saved();
             }
         });
+
+        nome = findViewById(R.id.nomeOfferta);
+        contenuto = findViewById(R.id.contenutoOfferta);
+        prezzo=findViewById(R.id.costoOfferta);
+        foto = findViewById(R.id.fotoOfferta);
+        locale = findViewById(R.id.locale);
+        scadenza = findViewById(R.id.scadenza);
+        Intent intent = getIntent();
+
+        nome.setText(intent.getStringExtra("nome"));
+        locale.setText(intent.getStringExtra("locale"));
+        contenuto.setText(intent.getStringExtra("descrizione"));
+        prezzo.setText(intent.getStringExtra("prezzo"));
+        scadenza.setText(intent.getStringExtra("scadenza"));
+        foto.setImageResource(intent.getIntExtra("foto", 0));
     }
 
     public void goHome() {
@@ -66,13 +90,17 @@ public class TipiCarne extends AppCompatActivity {
     }
 
     public void goBack() {
-        Intent indietro = new Intent(this, SelectFoodActivity.class);
+        Intent indietro = new Intent(this, ListaRisultati.class);
         startActivity(indietro);
         overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_right);
     }
 
-    public void goProcedi() {
-        Intent procedi = new Intent(this, Distanza.class);
-        startActivity(procedi);
+    public void saved() {
+        Context context = getApplicationContext();
+        CharSequence text = "Offerta Salvata!";
+        int duration = Toast.LENGTH_SHORT;
+        Toast toast = Toast.makeText(context, text, duration);
+        toast.setGravity(Gravity.CENTER_VERTICAL, 0, 0);
+        toast.show();
     }
 }

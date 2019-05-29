@@ -9,8 +9,8 @@
     <ImageView
         android:id="@+id/fotofood"
         android:src="@drawable/hamburger_elemento"
-        android:layout_width="75dp"
-        android:layout_height="75dp" />
+        android:layout_width="100dp"
+        android:layout_height="100dp" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -27,16 +27,29 @@
             android:text="Titolo"/>
 
         <TextView
+            android:id="@+id/nomeLocale"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="locale"/>
+
+        <TextView
             android:id="@+id/descrizioneOfferta"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="descrizione"/>
+
 
         <TextView
             android:id="@+id/prezzoOfferta"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="prezzo"/>
+
+        <TextView
+            android:id="@+id/scadenzaOfferta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="scadenza"/>
 
 
 

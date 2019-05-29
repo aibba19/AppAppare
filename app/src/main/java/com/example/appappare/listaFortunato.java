@@ -1,40 +1,35 @@
 package com.example.appappare;
 
-import android.content.Context;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
 import android.widget.BaseAdapter;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
-import androidx.annotation.*;
 
+public class listaFortunato extends AppCompatActivity {
 
-public class ListaOfferteSalvate extends AppCompatActivity {
     private ImageButton home;
     private ImageButton profilo;
     private ImageButton indietro;
 
     ListView lista;
-    String titoli[] = {"L'americana", "Menu Hamburger", "Grill 'em all"};
-    String descrizioni[] = {"Pizza wurstel e patatine", "Hamburger, patatine, bibita 33cl", "Bistecca di manzo, contorno, bibita"};
-    String prezzi[] = {"3.5€", "5€", "13€"};
-    String scadenze[] = {"03/07/2019" , "05/09/2019" , "15/08/2019"};
-    String locali[] = {"King Pizza", "Il Panino Buono" , "Country Smokehouse"};
-    int foto[] = {R.drawable.hamburgerofferta, R.drawable.margherita, R.drawable.bisteccaofferte};
-
+    String titoli[] = {"Du fritture", "Cesarina", "Menu Hamburger"};
+    String descrizioni[] = {"Frittura mista", "Caesar Salad", "Hamburger, patatine, bibita 33cl"};
+    String prezzi[] = {"10€", "7€", "5€"};
+    String scadenze[] = {"08/07/2019" , "05/11/2019" , "05/09/2019"};
+    String locali[] = {"O' mare", "Il foro" , "Country Smokehouse"};
+    int foto[] = {R.drawable.americana, R.drawable.wurstel, R.drawable.patatine};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_lista_offerte_salvate);
+        setContentView(R.layout.activity_lista_fortunato);
 
         indietro = (ImageButton) findViewById(R.id.backBtn);
         indietro.setOnClickListener(new View.OnClickListener() {
@@ -62,13 +57,13 @@ public class ListaOfferteSalvate extends AppCompatActivity {
 
         lista = (ListView) findViewById(R.id.listaOfferteSalvate);
 
-        CustomAdapter customAdapter = new CustomAdapter();
+        listaFortunato.CustomAdapter customAdapter = new listaFortunato.CustomAdapter();
         lista.setAdapter(customAdapter);
 
         lista.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                Intent intent = new Intent(getApplicationContext(),offertaSalvata.class);
+                Intent intent = new Intent(getApplicationContext(),VisualizzaOfferta.class);
                 intent.putExtra("nome", titoli[position]);
                 intent.putExtra("locale", locali[position]);
                 intent.putExtra("descrizione", descrizioni[position]);
@@ -94,7 +89,7 @@ public class ListaOfferteSalvate extends AppCompatActivity {
     }
 
     public void goBack() {
-        Intent indietro = new Intent(this, Profilo.class);
+        Intent indietro = new Intent(this, HomepageActivity.class);
         startActivity(indietro);
         overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_right);
     }
@@ -136,39 +131,4 @@ public class ListaOfferteSalvate extends AppCompatActivity {
             return view1;
         }
     }
-
-
-
-    /*class MyAdapter extends ArrayAdapter<String> {
-        Context context;
-        String myTitles[];
-        String myDescriptions[];
-        int[] fotos;
-
-        MyAdapter(Context c, String[] titoli, int[] foto, String[] descrizioni) {
-            super(c, R.layout.riga_lista_salvati, R.id.TitoloOfferta, titoli);
-            this.context = c;
-            this.fotos = foto;
-            this.myDescriptions = descrizioni;
-            this.myTitles = titoli;
-        }
-
-
-        @Override
-        public View getView(int position, View convertView, ViewGroup parent) {
-            LayoutInflater layoutInflater = (LayoutInflater)getApplicationContext().getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-            View riga = layoutInflater.inflate(R.layout.riga_lista_salvati, parent, false);
-            ImageView images = riga.findViewById(R.id.fotofood);
-            TextView myTitle = riga.findViewById(R.id.TitoloOfferta);
-            TextView myDescription = riga.findViewById(R.id.descrizioneOfferta);
-            images.setImageResource(fotos[position]);
-            myTitle.setText(titoli[position]);
-            myDescription.setText(descrizioni[position]);
-2
-            return riga;
-        }
-    }*/
-
-
-
 }

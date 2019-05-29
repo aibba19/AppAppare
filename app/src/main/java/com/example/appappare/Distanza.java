@@ -7,18 +7,17 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
 
-public class TipiCarne extends AppCompatActivity {
+public class Distanza extends AppCompatActivity {
 
     private ImageButton home;
     private ImageButton profilo;
     private ImageButton indietro;
-    private Button procedi;
-
+    private Button risultati;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_tipi_carne);
+        setContentView(R.layout.activity_distanza);
 
         indietro = (ImageButton) findViewById(R.id.backBtn);
         indietro.setOnClickListener(new View.OnClickListener() {
@@ -44,13 +43,15 @@ public class TipiCarne extends AppCompatActivity {
             }
         });
 
-        procedi = (Button) findViewById(R.id.procedi);
-        procedi.setOnClickListener(new View.OnClickListener() {
+        risultati = (Button) findViewById(R.id.risultatibtn);
+        risultati.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                goProcedi();
+                goRisultati();
             }
         });
+
+
     }
 
     public void goHome() {
@@ -71,8 +72,8 @@ public class TipiCarne extends AppCompatActivity {
         overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_right);
     }
 
-    public void goProcedi() {
-        Intent procedi = new Intent(this, Distanza.class);
-        startActivity(procedi);
+    public void goRisultati() {
+        Intent res = new Intent(this, ListaRisultati.class);
+        startActivity(res);
     }
 }

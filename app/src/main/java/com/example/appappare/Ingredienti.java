@@ -39,12 +39,11 @@ public class Ingredienti extends AppCompatActivity implements View.OnClickListen
         rucola.setOnClickListener(this);
         pancetta.setOnClickListener(this);
 
-        //BOTTONE
-        button = findViewById(R.id.button);
+        button = findViewById(R.id.procedi);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                openActivity2();
+                goProcedi();
 
             }
         });
@@ -73,11 +72,7 @@ public class Ingredienti extends AppCompatActivity implements View.OnClickListen
             }
         });
     }
-    //BOTTONE Apertura nuova pagina
-    public void openActivity2(){
-      /*  Intent intent = new Intent(this, MainActivity.class);
-        startActivity(intent);*/
-    }
+
     @Override
     public void onClick(View view){
         if (view.getId()==R.id.salame){
@@ -147,6 +142,11 @@ public class Ingredienti extends AppCompatActivity implements View.OnClickListen
         Intent indietro = new Intent(this, SelectFoodActivity.class);
         startActivity(indietro);
         overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_right);
+    }
+
+    public void goProcedi() {
+        Intent procedi = new Intent(this, Distanza.class);
+        startActivity(procedi);
     }
 
 }

@@ -10,6 +10,7 @@ import android.widget.ImageButton;
 public class HomepageActivity extends AppCompatActivity {
     private ImageButton profile;
     private Button cerca;
+    private Button affamato;
 
 
     @Override
@@ -32,6 +33,14 @@ public class HomepageActivity extends AppCompatActivity {
                 goCerca();
             }
         });
+
+        affamato = (Button) findViewById(R.id.affamatoButton);
+        affamato.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                goAffamato();
+            }
+        });
     }
 
     public void goProfilo() {
@@ -42,5 +51,10 @@ public class HomepageActivity extends AppCompatActivity {
     public void goCerca() {
         Intent search = new Intent(this, SelectFoodActivity.class);
         startActivity(search);
+    }
+
+    public void goAffamato() {
+        Intent fame = new Intent(this, listaFortunato.class);
+        startActivity(fame);
     }
 }

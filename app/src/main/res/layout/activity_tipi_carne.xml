@@ -176,14 +176,14 @@
 
         <Button
 
-            android:id="@+id/button"
+            android:id="@+id/procedi"
             android:layout_width="206dp"
             android:layout_height="50dp"
             android:layout_marginLeft="100dp"
             android:layout_marginTop="10dp"
             android:layout_marginRight="80dp"
             android:fontFamily="cursive"
-            android:text="cerca"
+            android:text="avanti"
             android:textSize="20dp"
             android:typeface="monospace"
 

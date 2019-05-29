@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Distanza"
+    android:background="@drawable/woodbackground">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:id="@+id/backBtn"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/back" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/profileBtn"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginLeft="340dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/round_face_white_48dp" />
+
+            <ImageButton
+                android:id="@+id/homeBtn"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginLeft="-130dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/homebutton" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/distanza"
+            android:layout_marginTop="150dp"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:hint="Distanza (metri)"
+            android:textSize="40dp"
+            android:fontFamily="cursive"
+            />
+
+        <EditText
+            android:id="@+id/budget"
+            android:layout_marginTop="100dp"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:hint="Budget"
+            android:textSize="40dp"
+            android:fontFamily="cursive"
+            />
+
+        <Button
+            android:id="@+id/risultatibtn"
+            android:layout_width="206dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="80dp"
+            android:fontFamily="cursive"
+            android:text="avanti"
+            android:textSize="20dp"
+            android:typeface="monospace"
+
+            />
+
+    </LinearLayout>
+
+</RelativeLayout>

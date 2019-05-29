@@ -9,7 +9,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".TipiCarne"></activity>
+        <activity android:name=".OffertaFortunato"></activity>
+        <activity android:name=".listaFortunato" />
+        <activity android:name=".listafortunato" />
+        <activity android:name=".ListaFortunato" />
+        <activity android:name=".VisualizzaOfferta" />
+        <activity android:name=".ListaRisultati" />
+        <activity android:name=".Distanza" />
+        <activity android:name=".TipiCarne" />
         <activity android:name=".offertaSalvata" />
         <activity android:name=".ListaOfferteSalvate" />
         <activity android:name=".Ingredienti" />

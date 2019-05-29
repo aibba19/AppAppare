@@ -11,9 +11,11 @@ import android.widget.TextView;
 public class offertaSalvata extends AppCompatActivity {
 
     TextView nome;
+    TextView locale;
     TextView contenuto;
     ImageView foto;
     TextView prezzo;
+    TextView scadenza;
     private ImageButton home;
     private ImageButton profilo;
     private ImageButton indietro;
@@ -51,13 +53,17 @@ public class offertaSalvata extends AppCompatActivity {
         contenuto = findViewById(R.id.contenutoOfferta);
         prezzo=findViewById(R.id.costoOfferta);
         foto = findViewById(R.id.fotoOfferta);
-
+        locale = findViewById(R.id.locale);
+        scadenza = findViewById(R.id.scadenza);
         Intent intent = getIntent();
 
         nome.setText(intent.getStringExtra("nome"));
+        locale.setText(intent.getStringExtra("locale"));
         contenuto.setText(intent.getStringExtra("descrizione"));
         prezzo.setText(intent.getStringExtra("prezzo"));
+        scadenza.setText(intent.getStringExtra("scadenza"));
         foto.setImageResource(intent.getIntExtra("foto", 0));
+
 
     }
 
