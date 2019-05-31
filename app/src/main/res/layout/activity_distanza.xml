@@ -52,14 +52,14 @@
 
         <EditText
             android:id="@+id/distanza"
-            android:layout_marginTop="150dp"
+            android:layout_marginTop="200dp"
             android:layout_width="300dp"
             android:layout_height="60dp"
             android:layout_gravity="center"
             android:hint="Distanza (metri)"
-            android:textSize="40dp"
-            android:fontFamily="cursive"
-            />
+            android:textSize="30dp"
+            android:fontFamily="sans-serif-light"
+            android:textStyle="italic"            />
 
         <EditText
             android:id="@+id/budget"
@@ -67,22 +67,20 @@
             android:layout_width="300dp"
             android:layout_height="60dp"
             android:layout_gravity="center"
-            android:hint="Budget"
-            android:textSize="40dp"
-            android:fontFamily="cursive"
-            />
+            android:hint="Budget (€)"
+            android:textSize="30dp"
+            android:fontFamily="sans-serif-light"
+            android:textStyle="italic"            />
 
         <Button
             android:id="@+id/risultatibtn"
             android:layout_width="206dp"
             android:layout_height="50dp"
             android:layout_marginLeft="100dp"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="30dp"
             android:layout_marginRight="80dp"
-            android:fontFamily="cursive"
             android:text="avanti"
-            android:textSize="20dp"
-            android:typeface="monospace"
+
 
             />
 

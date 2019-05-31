@@ -27,7 +27,20 @@
             android:layout_height="150dp"
             android:layout_marginTop="70dp"
             android:contentDescription="@string/logo"
+            android:layout_gravity="center"
             android:src="@drawable/propic" />
+
+        <TextView
+            android:id="@+id/nome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="nome"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:textSize="30dp"
+            android:fontFamily="sans-serif-light"
+            android:textStyle="italic"
+            android:textColor="#000"/>
 
         <Button
             android:id="@+id/listaSalvati"

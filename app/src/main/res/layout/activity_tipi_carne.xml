@@ -49,143 +49,129 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:layout_marginTop="60dp">
+        android:layout_marginTop="90dp">
 
         <TextView
-
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="150dp"
-            android:fontFamily="cursive"
+            android:layout_gravity="center"
+            android:fontFamily="sans-serif-light"
+            android:textStyle="italic"
             android:text="CARNI"
-            android:textColor="@color/colorAccent"
-            android:textSize="40dp"
-            android:typeface="serif" />
+            android:textColor="#8A4117"
+            android:textSize="40dp" />
 
         <CheckBox
             android:id="@+id/bisteccaManzo"
+            android:layout_marginTop="5dp"
+            android:typeface="monospace"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="60dp"
-            android:layout_marginTop="5dp"
             android:layout_marginRight="0dp"
-            android:text="Bistecca di Manzo"
-            android:fontFamily="cursive"
-            android:textSize="40dp"
-            android:typeface="monospace"
-            tools:layout_editor_absoluteX="0dp"
-            tools:layout_editor_absoluteY="60dp" />
+            android:layout_marginLeft="100dp"
+            android:text="Bistecca di manzo"
+            android:fontFamily="sans-serif-light"
+            android:textStyle="italic"
+            android:textSize="30dp"/>
 
         <CheckBox
             android:id="@+id/bisteccaCavallo"
+            android:layout_marginTop="5dp"
+            android:typeface="monospace"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="60dp"
-            android:layout_marginTop="5dp"
             android:layout_marginRight="0dp"
-            android:fontFamily="cursive"
-            android:text="Bistecca di Cavallo"
-            android:textSize="40dp"
-            android:typeface="monospace"
-            tools:layout_editor_absoluteX="0dp"
-            tools:layout_editor_absoluteY="180dp" />
+            android:layout_marginLeft="100dp"
+            android:text="Bistecca di cavallo"
+            android:fontFamily="sans-serif-light"
+            android:textStyle="italic"
+            android:textSize="30dp"/>
 
         <CheckBox
             android:id="@+id/bisteccaMaiale"
+            android:layout_marginTop="5dp"
+            android:typeface="monospace"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="60dp"
-            android:layout_marginTop="5dp"
             android:layout_marginRight="0dp"
-            android:fontFamily="cursive"
-            android:text="Bistecca di Maiale"
-            android:textSize="40dp"
-            android:typeface="monospace"
-            tools:layout_editor_absoluteX="0dp"
-            tools:layout_editor_absoluteY="220dp" />
+            android:layout_marginLeft="100dp"
+            android:text="Bistecca di maiale"
+            android:fontFamily="sans-serif-light"
+            android:textStyle="italic"
+            android:textSize="30dp"/>
 
         <CheckBox
             android:id="@+id/spezzatinoAsino"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="60dp"
             android:layout_marginTop="5dp"
-            android:layout_marginRight="0dp"
-            android:fontFamily="cursive"
-            android:text="Spezzatino di Asino"
-            android:textSize="40dp"
             android:typeface="monospace"
-            tools:layout_editor_absoluteX="0dp"
-            tools:layout_editor_absoluteY="300dp" />
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="0dp"
+            android:layout_marginLeft="100dp"
+            android:text="Filetto di asino"
+            android:fontFamily="sans-serif-light"
+            android:textStyle="italic"
+            android:textSize="30dp"/>
 
         <CheckBox
             android:id="@+id/costineMaiale"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="60dp"
             android:layout_marginTop="5dp"
-            android:layout_marginRight="0dp"
-            android:fontFamily="cursive"
-            android:text="Costine di Maiale"
-            android:textSize="40dp"
             android:typeface="monospace"
-            tools:layout_editor_absoluteX="0dp"
-            tools:layout_editor_absoluteY="540dp" />
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="0dp"
+            android:layout_marginLeft="100dp"
+            android:text="Costine di maiale"
+            android:fontFamily="sans-serif-light"
+            android:textStyle="italic"
+            android:textSize="30dp"/>
 
         <CheckBox
             android:id="@+id/grigliataMista"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="60dp"
             android:layout_marginTop="5dp"
-            android:layout_marginRight="0dp"
-            android:fontFamily="cursive"
-            android:text="Grigliata Mista"
-            android:textSize="40dp"
             android:typeface="monospace"
-            tools:layout_editor_absoluteX="0dp"
-            tools:layout_editor_absoluteY="620dp" />
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="0dp"
+            android:layout_marginLeft="100dp"
+            android:text="Grigliata mista"
+            android:fontFamily="sans-serif-light"
+            android:textStyle="italic"
+            android:textSize="30dp"/>
 
         <CheckBox
             android:id="@+id/salsiccia"
-            android:layout_width="387dp"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="60dp"
             android:layout_marginTop="5dp"
-            android:layout_marginRight="0dp"
-            android:fontFamily="cursive"
-            android:text="Salsiccia"
-            android:textSize="40dp"
             android:typeface="monospace"
-            tools:layout_editor_absoluteX="0dp"
-            tools:layout_editor_absoluteY="380dp" />
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="0dp"
+            android:layout_marginLeft="100dp"
+            android:text="Salsiccia"
+            android:fontFamily="sans-serif-light"
+            android:textStyle="italic"
+            android:textSize="30dp"/>
 
         <CheckBox
             android:id="@+id/spiedini"
-            android:layout_width="270dp"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="60dp"
             android:layout_marginTop="5dp"
-            android:layout_marginRight="0dp"
-            android:fontFamily="cursive"
-            android:text="Spiedini"
-            android:textSize="40dp"
             android:typeface="monospace"
-            tools:layout_editor_absoluteX="0dp"
-            tools:layout_editor_absoluteY="460dp" />
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="0dp"
+            android:layout_marginLeft="100dp"
+            android:text="Spiedini"
+            android:fontFamily="sans-serif-light"
+            android:textStyle="italic"
+            android:textSize="30dp"/>
 
         <Button
-
             android:id="@+id/procedi"
-            android:layout_width="206dp"
-            android:layout_height="50dp"
-            android:layout_marginLeft="100dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginRight="80dp"
-            android:fontFamily="cursive"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
             android:text="avanti"
-            android:textSize="20dp"
-            android:typeface="monospace"
 
             />
 

@@ -59,7 +59,7 @@
             android:layout_marginLeft="10dp"
 
             android:layout_marginRight="20dp"
-            android:background="@drawable/outline_bookmark_black_48dp" />
+            android:background="@drawable/salvabutton" />
 
 
         <TextView
@@ -69,7 +69,9 @@
             android:layout_marginLeft="20dp"
             android:text="Nome Offerta"
             android:textColor="#000"
-            android:textSize="30dp" />
+            android:textSize="30dp"
+            android:fontFamily="sans-serif-light"
+            android:textStyle="italic"/>
 
         <TextView
             android:id="@+id/locale"
@@ -79,7 +81,9 @@
             android:layout_marginTop="20dp"
             android:text="locale"
             android:textColor="#000"
-            android:textSize="20dp" />
+            android:textSize="20dp"
+            android:fontFamily="sans-serif-light"
+            android:textStyle="italic"/>
 
         <TextView
             android:id="@+id/contenutoOfferta"
@@ -89,7 +93,9 @@
             android:layout_marginTop="20dp"
             android:text="Contenuto Offerta"
             android:textColor="#000"
-            android:textSize="20dp" />
+            android:textSize="20dp"
+            android:fontFamily="sans-serif-light"
+            android:textStyle="italic"/>
 
         <TextView
             android:id="@+id/costoOfferta"
@@ -99,7 +105,9 @@
             android:layout_marginTop="20dp"
             android:text="prezzo"
             android:textColor="#000"
-            android:textSize="20dp" />
+            android:textSize="20dp"
+            android:fontFamily="sans-serif-light"
+            android:textStyle="italic"/>
 
         <TextView
             android:id="@+id/scadenza"
@@ -109,7 +117,9 @@
             android:layout_marginTop="20dp"
             android:text="scadenza"
             android:textColor="#000"
-            android:textSize="20dp" />
+            android:textSize="20dp"
+            android:fontFamily="sans-serif-light"
+            android:textStyle="italic"/>
 
         <ImageView
             android:id="@+id/fotoOfferta"
@@ -118,8 +128,7 @@
             android:layout_centerHorizontal="true"
             android:layout_marginLeft="20dp"
             android:layout_marginTop="20dp"
-            android:layout_marginRight="20dp"
-            android:background="@drawable/backgroundofferta" />
+            android:layout_marginRight="20dp" />
 
 
 

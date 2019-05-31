@@ -27,8 +27,8 @@ public class ListaOfferteSalvate extends AppCompatActivity {
     String descrizioni[] = {"Pizza wurstel e patatine", "Hamburger, patatine, bibita 33cl", "Bistecca di manzo, contorno, bibita"};
     String prezzi[] = {"3.5€", "5€", "13€"};
     String scadenze[] = {"03/07/2019" , "05/09/2019" , "15/08/2019"};
-    String locali[] = {"King Pizza", "Il Panino Buono" , "Country Smokehouse"};
-    int foto[] = {R.drawable.hamburgerofferta, R.drawable.margherita, R.drawable.bisteccaofferte};
+    String locali[] = {"King Pizza (475 m)", "Il Panino Buono (350 m)" , "Country Smokehouse (650 m)"};
+    int foto[] = {R.drawable.americana, R.drawable.hamburgerofferta, R.drawable.bisteccaofferte};
 
 
     @Override

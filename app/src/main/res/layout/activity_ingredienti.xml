@@ -50,17 +50,17 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        android:layout_marginTop="60dp">
+        android:layout_marginTop="90dp">
 
         <TextView
-            android:layout_marginTop="5dp"
+
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:fontFamily="cursive"
             android:layout_gravity="center"
-            android:typeface="serif"
+            android:fontFamily="sans-serif-light"
+            android:textStyle="italic"
             android:text="INGREDIENTI"
-            android:textColor="@color/colorAccent"
+            android:textColor="#8A4117"
             android:textSize="40dp" />
 
         <CheckBox
@@ -72,114 +72,109 @@
             android:layout_marginRight="0dp"
             android:layout_marginLeft="100dp"
             android:text="Salame"
-            android:fontFamily="cursive"
-            android:textSize="40dp"
-            tools:layout_editor_absoluteX="0dp"
-            tools:layout_editor_absoluteY="60dp" />
+            android:fontFamily="sans-serif-light"
+            android:textStyle="italic"
+            android:textSize="30dp" />
 
         <CheckBox
             android:id="@+id/wurstel"
+            android:layout_marginTop="5dp"
+            android:typeface="monospace"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginRight="0dp"
             android:layout_marginLeft="100dp"
-            android:fontFamily="cursive"
             android:text="Wurstel"
-            android:textSize="40dp"
-            android:typeface="monospace"
-            tools:layout_editor_absoluteX="0dp"
-            tools:layout_editor_absoluteY="80dp" />
+            android:fontFamily="sans-serif-light"
+            android:textStyle="italic"
+            android:textSize="30dp"/>
 
         <CheckBox
             android:id="@+id/cotto"
+            android:layout_marginTop="5dp"
+            android:typeface="monospace"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginRight="0dp"
             android:layout_marginLeft="100dp"
-            android:fontFamily="cursive"
             android:text="Prosciutto cotto"
-            android:textSize="40dp"
-            android:typeface="monospace"
-            tools:layout_editor_absoluteX="0dp"
-            tools:layout_editor_absoluteY="220dp" />
+            android:fontFamily="sans-serif-light"
+            android:textStyle="italic"
+            android:textSize="30dp"/>
 
         <CheckBox
             android:id="@+id/patate"
-            android:layout_width="270dp"
-            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
             android:typeface="monospace"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_marginRight="0dp"
             android:layout_marginLeft="100dp"
-            android:text="Patate fritte"
-            android:fontFamily="cursive"
-            android:textSize="40dp"
-            tools:layout_editor_absoluteX="0dp"
-            tools:layout_editor_absoluteY="300dp" />
+            android:text="Patatine"
+            android:fontFamily="sans-serif-light"
+            android:textStyle="italic"
+            android:textSize="30dp"/>
 
         <CheckBox
             android:id="@+id/funghi"
-            android:layout_width="178dp"
+            android:layout_marginTop="5dp"
+            android:typeface="monospace"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginRight="0dp"
             android:layout_marginLeft="100dp"
             android:text="Funghi"
-            android:fontFamily="cursive"
-            android:textSize="40dp"
-            android:typeface="monospace"
-            tools:layout_editor_absoluteX="0dp"
-            tools:layout_editor_absoluteY="380dp" />
+            android:fontFamily="sans-serif-light"
+            android:textStyle="italic"
+            android:textSize="30dp"/>
 
         <CheckBox
             android:id="@+id/pomodorini"
-            android:layout_width="270dp"
+            android:layout_marginTop="5dp"
+            android:typeface="monospace"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginRight="0dp"
             android:layout_marginLeft="100dp"
-            android:typeface="monospace"
             android:text="Pomodorini"
-            android:fontFamily="cursive"
-            android:textSize="40dp"
-            tools:layout_editor_absoluteX="0dp"
-            tools:layout_editor_absoluteY="460dp" />
+            android:fontFamily="sans-serif-light"
+            android:textStyle="italic"
+            android:textSize="30dp"/>
 
         <CheckBox
             android:id="@+id/rucola"
-            android:layout_width="222dp"
+            android:layout_marginTop="5dp"
+            android:typeface="monospace"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginRight="0dp"
             android:layout_marginLeft="100dp"
             android:text="Rucola"
-            android:fontFamily="cursive"
-            android:textSize="40dp"
-            android:typeface="monospace"
-            tools:layout_editor_absoluteX="0dp"
-            tools:layout_editor_absoluteY="540dp" />
+            android:fontFamily="sans-serif-light"
+            android:textStyle="italic"
+            android:textSize="30dp"/>
 
         <CheckBox
             android:id="@+id/pancetta"
-            android:layout_width="270dp"
+            android:layout_marginTop="5dp"
+            android:typeface="monospace"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginRight="0dp"
             android:layout_marginLeft="100dp"
-            android:typeface="monospace"
             android:text="Pancetta"
-            android:fontFamily="cursive"
-            android:textSize="40dp"
-            tools:layout_editor_absoluteX="0dp"
-            tools:layout_editor_absoluteY="620dp" />
+            android:fontFamily="sans-serif-light"
+            android:textStyle="italic"
+            android:textSize="30dp"/>
 
         <Button
             android:id="@+id/procedi"
-            android:layout_width="206dp"
-            android:layout_height="50dp"
-            android:layout_marginLeft="100dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
-            android:layout_marginRight="80dp"
-            android:fontFamily="cursive"
+            android:layout_gravity="center"
             android:onClick="onClick"
             android:text="avanti"
-            android:textSize="20dp"
-            android:typeface="monospace"
 
            />
 

@@ -49,92 +49,134 @@
 
 
         <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
             android:orientation="vertical"
-            android:layout_gravity="center"
-            android:layout_marginTop="5dp">
+            android:layout_marginTop="22dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="sans-serif-light"
+                    android:textStyle="italic"
+                    android:text="PIETANZE"
+                    android:textColor="#8A4117"
+                    android:textSize="40dp" />
 
 
                 <CheckBox
                     android:id="@+id/pesce"
-                    android:layout_width="131dp"
+                    android:layout_marginTop="5dp"
+                    android:typeface="monospace"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_margin="10dp"
-                    android:text="@string/pesce"
-                    android:textSize="20sp" />
+                    android:layout_marginRight="0dp"
+                    android:layout_marginLeft="100dp"
+                    android:text="Pesce"
+                    android:fontFamily="sans-serif-light"
+                    android:textStyle="italic"
+                    android:textSize="30dp"/>
 
                 <CheckBox
                     android:id="@+id/pizza"
-                    android:layout_width="133dp"
+                    android:layout_marginTop="5dp"
+                    android:typeface="monospace"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_margin="10dp"
-                    android:text="@string/pizza"
-                    android:textSize="20sp" />
+                    android:layout_marginRight="0dp"
+                    android:layout_marginLeft="100dp"
+                    android:text="Pizza"
+                    android:fontFamily="sans-serif-light"
+                    android:textStyle="italic"
+                    android:textSize="30dp"/>
 
                 <CheckBox
                     android:id="@+id/frutta"
-                    android:layout_width="132dp"
+                    android:layout_marginTop="5dp"
+                    android:typeface="monospace"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_margin="15dp"
-                    android:text="@string/frutta"
-                    android:textSize="20sp" />
+                    android:layout_marginRight="0dp"
+                    android:layout_marginLeft="100dp"
+                    android:text="Frutta"
+                    android:fontFamily="sans-serif-light"
+                    android:textStyle="italic"
+                    android:textSize="30dp"/>
 
                 <CheckBox
                     android:id="@+id/hamburger"
+                    android:layout_marginTop="5dp"
+                    android:typeface="monospace"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_margin="10dp"
-                    android:text="@string/hamburger"
-                    android:textSize="20sp" />
+                    android:layout_marginRight="0dp"
+                    android:layout_marginLeft="100dp"
+                    android:text="Hamburger"
+                    android:fontFamily="sans-serif-light"
+                    android:textStyle="italic"
+                    android:textSize="30dp"/>
 
                 <CheckBox
                     android:id="@+id/kebab"
-                    android:layout_width="134dp"
+                    android:layout_marginTop="5dp"
+                    android:typeface="monospace"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_margin="10dp"
-                    android:text="@string/kebab"
-                    android:textSize="20sp" />
+                    android:layout_marginRight="0dp"
+                    android:layout_marginLeft="100dp"
+                    android:text="Kebab"
+                    android:fontFamily="sans-serif-light"
+                    android:textStyle="italic"
+                    android:textSize="30dp"/>
 
                 <CheckBox
                     android:id="@+id/patatine"
-                    android:layout_width="134dp"
+                    android:layout_marginTop="5dp"
+                    android:typeface="monospace"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_margin="10dp"
-                    android:text="@string/patatine"
-                    android:textSize="20sp" />
+                    android:layout_marginRight="0dp"
+                    android:layout_marginLeft="100dp"
+                    android:text="Patatine"
+                    android:fontFamily="sans-serif-light"
+                    android:textStyle="italic"
+                    android:textSize="30dp"/>
 
                 <CheckBox
                     android:id="@+id/carne"
-                    android:layout_width="132dp"
+                    android:layout_marginTop="5dp"
+                    android:typeface="monospace"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_margin="10dp"
-                    android:text="@string/carne"
-                    android:textSize="20sp" />
+                    android:layout_marginRight="0dp"
+                    android:layout_marginLeft="100dp"
+                    android:text="Carne"
+                    android:fontFamily="sans-serif-light"
+                    android:textStyle="italic"
+                    android:textSize="30dp"/>
 
                 <CheckBox
                     android:id="@+id/sushi"
-                    android:layout_width="136dp"
+                    android:layout_marginTop="5dp"
+                    android:typeface="monospace"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_margin="10dp"
-                    android:text="@string/sushi"
-                    android:textSize="20sp" />
+                    android:layout_marginRight="0dp"
+                    android:layout_marginLeft="100dp"
+                    android:text="Sushi"
+                    android:fontFamily="sans-serif-light"
+                    android:textStyle="italic"
+                    android:textSize="30dp"/>
 
                 <Button
                     android:id="@+id/avanti"
-                    android:layout_width="100dp"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
                     android:layout_gravity="center"
-                    android:layout_margin="10dp"
-                    android:text="Avanti" />
+                    android:onClick="onClick"
+                    android:text="avanti"/>
         </LinearLayout>
 
 </LinearLayout>

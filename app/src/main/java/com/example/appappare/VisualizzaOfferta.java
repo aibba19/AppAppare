@@ -23,6 +23,8 @@ public class VisualizzaOfferta extends AppCompatActivity {
     private ImageButton profilo;
     private ImageButton indietro;
     private ImageButton salva;
+    private boolean clicked = false;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -57,7 +59,16 @@ public class VisualizzaOfferta extends AppCompatActivity {
         salva.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                saved();
+                clicked = !clicked;
+
+                if(clicked) {
+                    saved();
+                    salva.setBackgroundResource(R.drawable.outline_bookmark_black_48dp);
+                } else {
+                    removed();
+                    salva.setBackgroundResource(R.drawable.outline_bookmark_white_48dp);
+                }
+
             }
         });
 
@@ -98,6 +109,16 @@ public class VisualizzaOfferta extends AppCompatActivity {
     public void saved() {
         Context context = getApplicationContext();
         CharSequence text = "Offerta Salvata!";
+        int duration = Toast.LENGTH_SHORT;
+        Toast toast = Toast.makeText(context, text, duration);
+        toast.setGravity(Gravity.CENTER_VERTICAL, 0, 0);
+        toast.show();
+    }
+
+
+    public void removed() {
+        Context context = getApplicationContext();
+        CharSequence text = "Elemento rimosso dagli oggetti salvati";
         int duration = Toast.LENGTH_SHORT;
         Toast toast = Toast.makeText(context, text, duration);
         toast.setGravity(Gravity.CENTER_VERTICAL, 0, 0);

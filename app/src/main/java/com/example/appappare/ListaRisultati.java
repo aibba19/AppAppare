@@ -23,7 +23,7 @@ public class ListaRisultati extends AppCompatActivity {
     String descrizioni[] = {"Pizza wurstel e patatine", "Pizza Wurstel", "Pizza patatine fritte"};
     String prezzi[] = {"4.5€", "4€", "4€"};
     String scadenze[] = {"03/07/2019" , "05/09/2019" , "15/08/2019"};
-    String locali[] = {"King Pizza", "Il forno" , "Vesuvio"};
+    String locali[] = {"King Pizza (475 m)", "Il forno (250 m)" , "Vesuvio (350 m)"};
     int foto[] = {R.drawable.americana, R.drawable.wurstel, R.drawable.patatine};
 
     @Override

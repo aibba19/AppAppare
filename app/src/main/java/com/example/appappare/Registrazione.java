@@ -24,6 +24,7 @@ public class Registrazione extends AppCompatActivity {
     private String nome, email, password;
     private ImageButton indietro;
     static ArrayList<User> usersList;
+    private String nomeUtente;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -47,6 +48,8 @@ public class Registrazione extends AppCompatActivity {
                 goBack();
             }
         });
+
+
 
     }
 

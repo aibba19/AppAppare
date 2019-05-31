@@ -38,7 +38,10 @@
             android:layout_width="300dp"
             android:layout_height="60dp"
             android:layout_gravity="center"
-            android:hint="Username"/>
+            android:hint="Username"
+            android:fontFamily="sans-serif-light"
+            android:textStyle="italic"
+            android:textSize="25dp"/>
 
         <EditText
             android:id="@+id/nuovaMail"
@@ -46,7 +49,10 @@
             android:layout_width="300dp"
             android:layout_height="60dp"
             android:layout_gravity="center"
-            android:hint="Email"/>
+            android:hint="Email"
+            android:fontFamily="sans-serif-light"
+            android:textStyle="italic"
+            android:textSize="25dp"/>
 
         <EditText
             android:id="@+id/nuovaPassword"
@@ -55,7 +61,10 @@
             android:layout_height="60dp"
             android:layout_gravity="center"
             android:inputType="textPassword"
-            android:hint="Password"/>
+            android:hint="Password"
+            android:fontFamily="sans-serif-light"
+            android:textStyle="italic"
+            android:textSize="25dp"/>
 
         <Button
             android:id="@+id/effettuaRegistrazione"

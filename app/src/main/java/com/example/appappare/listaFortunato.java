@@ -23,7 +23,7 @@ public class listaFortunato extends AppCompatActivity {
     String descrizioni[] = {"Frittura mista", "Caesar Salad", "Hamburger, patatine, bibita 33cl"};
     String prezzi[] = {"10€", "7€", "5€"};
     String scadenze[] = {"08/07/2019" , "05/11/2019" , "05/09/2019"};
-    String locali[] = {"O' mare", "Il foro" , "Country Smokehouse"};
+    String locali[] = {"O' mare (800 m)", "Il foro (780 m)" , "Country Smokehouse (650 m)"};
     int foto[] = {R.drawable.frittura, R.drawable.caesar_salad, R.drawable.hamburgeroffertafortunata};
 
     @Override
