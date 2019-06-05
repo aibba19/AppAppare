@@ -84,12 +84,16 @@ public class SelectFoodActivity extends AppCompatActivity {
                 if(checkCarne){
                     startActivity(new Intent(SelectFoodActivity.this, TipiCarne.class));
                     scegliCarne();
+                }else {
+                    startActivity(new Intent(SelectFoodActivity.this, Distanza.class));
                 }
                 if(checkPizza){
                     startActivity(new Intent(SelectFoodActivity.this, Ingredienti.class));
                     scegliPizza();
-                    }
+                    }else {
+                    startActivity(new Intent(SelectFoodActivity.this, Distanza.class));
                 }
+            }
         });
     }
 
@@ -125,7 +129,7 @@ public class SelectFoodActivity extends AppCompatActivity {
     }
 
     public void goBack() {
-        Intent indietro = new Intent(this, ListaOfferteSalvate.class);
+        Intent indietro = new Intent(this, HomepageActivity.class);
         startActivity(indietro);
         overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_right);
     }

@@ -1,5 +1,6 @@
 package com.example.appappare;
 
+import android.app.AlertDialog;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -23,13 +24,16 @@ public class listaFortunato extends AppCompatActivity {
     String descrizioni[] = {"Frittura mista", "Caesar Salad", "Hamburger, patatine, bibita 33cl"};
     String prezzi[] = {"10€", "7€", "5€"};
     String scadenze[] = {"08/07/2019" , "05/11/2019" , "05/09/2019"};
-    String locali[] = {"O' mare (800 m)", "Il foro (780 m)" , "Country Smokehouse (650 m)"};
+    String locali[] = {"O' mare", "Il foro" , "Country Smokehouse"};
+    String distanzeV[]= {"800 m", "780 m", "650 m"};
     int foto[] = {R.drawable.frittura, R.drawable.caesar_salad, R.drawable.hamburgeroffertafortunata};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_lista_fortunato);
+
+        infoAffamato();
 
         indietro = (ImageButton) findViewById(R.id.backBtn);
         indietro.setOnClickListener(new View.OnClickListener() {
@@ -66,6 +70,7 @@ public class listaFortunato extends AppCompatActivity {
                 Intent intent = new Intent(getApplicationContext(),OffertaFortunato.class);
                 intent.putExtra("nome", titoli[position]);
                 intent.putExtra("locale", locali[position]);
+                intent.putExtra("distanzaaffamato", distanzeV[position]);
                 intent.putExtra("descrizione", descrizioni[position]);
                 intent.putExtra("foto", foto[position]);
                 intent.putExtra("prezzo", prezzi[position]);
@@ -116,6 +121,7 @@ public class listaFortunato extends AppCompatActivity {
 
             TextView name = affamato.findViewById(R.id.titoloAffamato);
             TextView place = affamato.findViewById(R.id.localeAffamato);
+            TextView distanc = affamato.findViewById(R.id.distanzaOffertaFortunato);
             TextView description = affamato.findViewById(R.id.descrizioneAffamato);
             TextView cost = affamato.findViewById(R.id.prezzoAffamato);
             TextView scad = affamato.findViewById(R.id.scadenzaAffamato);
@@ -123,6 +129,7 @@ public class listaFortunato extends AppCompatActivity {
 
             name.setText(titoli[position]);
             place.setText(locali[position]);
+            distanc.setText(distanzeV[position]);
             description.setText(descrizioni[position]);
             cost.setText(prezzi[position]);
             scad.setText(scadenze[position]);
@@ -130,5 +137,13 @@ public class listaFortunato extends AppCompatActivity {
 
             return affamato;
         }
+    }
+
+    public void infoAffamato() {
+        AlertDialog.Builder info = new AlertDialog.Builder(this);
+        info.setTitle("Mi sento Affamato!");
+        info.setMessage("Offerte interessanti a un prezzo massimo di 10€ e al massimo a 1 km da te!");
+        AlertDialog alert = info.create();
+        alert.show();
     }
 }

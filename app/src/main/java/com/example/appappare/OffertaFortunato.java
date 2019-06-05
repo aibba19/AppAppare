@@ -15,6 +15,7 @@ public class OffertaFortunato extends AppCompatActivity {
 
     TextView nome;
     TextView locale;
+    TextView distanza;
     TextView contenuto;
     ImageView foto;
     TextView prezzo;
@@ -74,6 +75,7 @@ public class OffertaFortunato extends AppCompatActivity {
 
         nome = findViewById(R.id.nomeOfferta);
         contenuto = findViewById(R.id.contenutoOfferta);
+        distanza = findViewById(R.id.fortunatoDistanza);
         prezzo=findViewById(R.id.costoOfferta);
         foto = findViewById(R.id.fotoOfferta);
         locale = findViewById(R.id.locale);
@@ -82,6 +84,7 @@ public class OffertaFortunato extends AppCompatActivity {
 
         nome.setText(intent.getStringExtra("nome"));
         locale.setText(intent.getStringExtra("locale"));
+        distanza.setText(intent.getStringExtra("distanzaaffamato"));
         contenuto.setText(intent.getStringExtra("descrizione"));
         prezzo.setText(intent.getStringExtra("prezzo"));
         scadenza.setText(intent.getStringExtra("scadenza"));

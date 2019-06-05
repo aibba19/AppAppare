@@ -12,6 +12,7 @@ public class offertaSalvata extends AppCompatActivity {
 
     TextView nome;
     TextView locale;
+    TextView dist;
     TextView contenuto;
     ImageView foto;
     TextView prezzo;
@@ -51,6 +52,7 @@ public class offertaSalvata extends AppCompatActivity {
 
         nome = findViewById(R.id.nomeOfferta);
         contenuto = findViewById(R.id.contenutoOfferta);
+        dist = findViewById(R.id.distanzaLocale);
         prezzo=findViewById(R.id.costoOfferta);
         foto = findViewById(R.id.fotoOfferta);
         locale = findViewById(R.id.locale);
@@ -59,12 +61,11 @@ public class offertaSalvata extends AppCompatActivity {
 
         nome.setText(intent.getStringExtra("nome"));
         locale.setText(intent.getStringExtra("locale"));
+        dist.setText(intent.getStringExtra("distanza"));
         contenuto.setText(intent.getStringExtra("descrizione"));
         prezzo.setText(intent.getStringExtra("prezzo"));
         scadenza.setText(intent.getStringExtra("scadenza"));
         foto.setImageResource(intent.getIntExtra("foto", 0));
-
-
     }
 
     public void goHome() {

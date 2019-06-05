@@ -1,11 +1,15 @@
 package com.example.appappare;
 
+import android.app.AlertDialog;
+import android.content.Context;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.Gravity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
+import android.widget.Toast;
 
 public class HomepageActivity extends AppCompatActivity {
     private ImageButton profile;
@@ -57,4 +61,6 @@ public class HomepageActivity extends AppCompatActivity {
         Intent fame = new Intent(this, listaFortunato.class);
         startActivity(fame);
     }
+
+
 }

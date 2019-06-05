@@ -19,6 +19,7 @@ public class VisualizzaOfferta extends AppCompatActivity {
     ImageView foto;
     TextView prezzo;
     TextView scadenza;
+    TextView distanza;
     private ImageButton home;
     private ImageButton profilo;
     private ImageButton indietro;
@@ -74,6 +75,7 @@ public class VisualizzaOfferta extends AppCompatActivity {
 
         nome = findViewById(R.id.nomeOfferta);
         contenuto = findViewById(R.id.contenutoOfferta);
+        distanza = findViewById(R.id.distanzaRisultato);
         prezzo=findViewById(R.id.costoOfferta);
         foto = findViewById(R.id.fotoOfferta);
         locale = findViewById(R.id.locale);
@@ -82,6 +84,7 @@ public class VisualizzaOfferta extends AppCompatActivity {
 
         nome.setText(intent.getStringExtra("nome"));
         locale.setText(intent.getStringExtra("locale"));
+        distanza.setText(intent.getStringExtra("distanzaOffertaCercata"));
         contenuto.setText(intent.getStringExtra("descrizione"));
         prezzo.setText(intent.getStringExtra("prezzo"));
         scadenza.setText(intent.getStringExtra("scadenza"));

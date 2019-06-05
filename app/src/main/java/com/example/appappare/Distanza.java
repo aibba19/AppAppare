@@ -76,4 +76,6 @@ public class Distanza extends AppCompatActivity {
         Intent res = new Intent(this, ListaRisultati.class);
         startActivity(res);
     }
+
+
 }

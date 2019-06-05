@@ -23,7 +23,8 @@ public class ListaRisultati extends AppCompatActivity {
     String descrizioni[] = {"Pizza wurstel e patatine", "Pizza Wurstel", "Pizza patatine fritte"};
     String prezzi[] = {"4.5€", "4€", "4€"};
     String scadenze[] = {"03/07/2019" , "05/09/2019" , "15/08/2019"};
-    String locali[] = {"King Pizza (475 m)", "Il forno (250 m)" , "Vesuvio (350 m)"};
+    String locali[] = {"King Pizza", "Il forno" , "Vesuvio"};
+    String distanze[] = {"475 m", "250 m", "350 m"};
     int foto[] = {R.drawable.americana, R.drawable.wurstel, R.drawable.patatine};
 
     @Override
@@ -66,6 +67,7 @@ public class ListaRisultati extends AppCompatActivity {
                 Intent intent = new Intent(getApplicationContext(),VisualizzaOfferta.class);
                 intent.putExtra("nome", titoli[position]);
                 intent.putExtra("locale", locali[position]);
+                intent.putExtra("distanzaOffertaCercata", distanze[position]);
                 intent.putExtra("descrizione", descrizioni[position]);
                 intent.putExtra("foto", foto[position]);
                 intent.putExtra("prezzo", prezzi[position]);
@@ -116,6 +118,7 @@ public class ListaRisultati extends AppCompatActivity {
 
             TextView name = view1.findViewById(R.id.TitoloOfferta);
             TextView place = view1.findViewById(R.id.nomeLocale);
+            TextView dista = view1.findViewById(R.id.distanzaOfferta);
             TextView description = view1.findViewById(R.id.descrizioneOfferta);
             TextView cost = view1.findViewById(R.id.prezzoOfferta);
             TextView scad = view1.findViewById(R.id.scadenzaOfferta);
@@ -123,6 +126,7 @@ public class ListaRisultati extends AppCompatActivity {
 
             name.setText(titoli[position]);
             place.setText(locali[position]);
+            dista.setText(distanze[position]);
             description.setText(descrizioni[position]);
             cost.setText(prezzi[position]);
             scad.setText(scadenze[position]);

@@ -75,54 +75,6 @@ public class Ingredienti extends AppCompatActivity implements View.OnClickListen
 
     @Override
     public void onClick(View view){
-        if (view.getId()==R.id.salame){
-            if (salame.isChecked()){
-                Toast.makeText(getApplicationContext(), "salame è selezionato", Toast.LENGTH_SHORT).show();
-            }
-        }
-
-        if (view.getId()==R.id.wurstel){
-            if (wurstel.isChecked()){
-                Toast.makeText(getApplicationContext(), "wurstel è selezionato", Toast.LENGTH_SHORT).show();
-            }
-        }
-
-        if (view.getId()==R.id.cotto){
-            if (cotto.isChecked()){
-                Toast.makeText(getApplicationContext(), "prosciutto cotto è selezionato", Toast.LENGTH_SHORT).show();
-            }
-        }
-
-        if (view.getId()==R.id.patate){
-            if (patate.isChecked()){
-                Toast.makeText(getApplicationContext(), "patate fritte è selezionato", Toast.LENGTH_SHORT).show();
-            }
-        }
-
-        if (view.getId()==R.id.funghi){
-            if (funghi.isChecked()){
-                Toast.makeText(getApplicationContext(), "funghi è selezionato", Toast.LENGTH_SHORT).show();
-            }
-        }
-
-        if (view.getId()==R.id.pomodorini){
-            if (pomodorini.isChecked()){
-                Toast.makeText(getApplicationContext(), "pomodorini è selezionato", Toast.LENGTH_SHORT).show();
-            }
-        }
-
-        if (view.getId()==R.id.rucola){
-            if (rucola.isChecked()){
-                Toast.makeText(getApplicationContext(), "rucola è selezionato", Toast.LENGTH_SHORT).show();
-            }
-        }
-
-        if (view.getId()==R.id.pancetta){
-            if (pancetta.isChecked()){
-                Toast.makeText(getApplicationContext(), "pancetta è selezionato", Toast.LENGTH_SHORT).show();
-            }
-        }
-
 
     }
 

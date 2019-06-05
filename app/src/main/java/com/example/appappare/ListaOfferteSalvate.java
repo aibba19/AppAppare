@@ -27,7 +27,8 @@ public class ListaOfferteSalvate extends AppCompatActivity {
     String descrizioni[] = {"Pizza wurstel e patatine", "Hamburger, patatine, bibita 33cl", "Bistecca di manzo, contorno, bibita"};
     String prezzi[] = {"3.5€", "5€", "13€"};
     String scadenze[] = {"03/07/2019" , "05/09/2019" , "15/08/2019"};
-    String locali[] = {"King Pizza (475 m)", "Il Panino Buono (350 m)" , "Country Smokehouse (650 m)"};
+    String locali[] = {"King Pizza", "Il Panino Buono" , "Country Smokehouse"};
+    String distanze[] = {"475 m", "350 m", "650 m"};
     int foto[] = {R.drawable.americana, R.drawable.hamburgerofferta, R.drawable.bisteccaofferte};
 
 
@@ -71,6 +72,7 @@ public class ListaOfferteSalvate extends AppCompatActivity {
                 Intent intent = new Intent(getApplicationContext(),offertaSalvata.class);
                 intent.putExtra("nome", titoli[position]);
                 intent.putExtra("locale", locali[position]);
+                intent.putExtra("distanza", distanze[position]);
                 intent.putExtra("descrizione", descrizioni[position]);
                 intent.putExtra("foto", foto[position]);
                 intent.putExtra("prezzo", prezzi[position]);
@@ -121,6 +123,7 @@ public class ListaOfferteSalvate extends AppCompatActivity {
 
             TextView name = view1.findViewById(R.id.TitoloOfferta);
             TextView place = view1.findViewById(R.id.nomeLocale);
+            TextView distance = view1.findViewById(R.id.distanzaOfferta);
             TextView description = view1.findViewById(R.id.descrizioneOfferta);
             TextView cost = view1.findViewById(R.id.prezzoOfferta);
             TextView scad = view1.findViewById(R.id.scadenzaOfferta);
@@ -128,6 +131,7 @@ public class ListaOfferteSalvate extends AppCompatActivity {
 
             name.setText(titoli[position]);
             place.setText(locali[position]);
+            distance.setText(distanze[position]);
             description.setText(descrizioni[position]);
             cost.setText(prezzi[position]);
             scad.setText(scadenze[position]);
